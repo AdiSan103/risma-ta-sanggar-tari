@@ -1,12 +1,19 @@
+<script lang="ts" setup>
+import imgSample from "~/assets/images/3.jpg";
+
+</script>
+
 <template>
  <div class="component">
-  <img src="https://placehold.co/600x600" alt="image" class="component__image">
+  <img :src="imgSample" alt="image" class="component__image" />
   <div class="component__desc">
-   <p class="component__text1">Joining Mupu Art Dance was one of the best decisions I've ever made during my trip to
-    Bali. The instructors are
-    incredibly talented and patient, and the atmosphere is so warm and welcoming. </p>
+   <p class="component__text1">
+    Joining Mupu Art Dance was one of the best decisions I've ever made during my trip
+    to Bali. The instructors are incredibly talented and patient, and the atmosphere
+    is so warm and welcoming.
+   </p>
    <div class="component__stars">
-    <Icon v-for="n in 5" :key="n" name="mynaui:star-solid" style="color:orange; font-size: 30px;" />
+    <Icon v-for="n in 5" :key="n" name="mynaui:star-solid" style="color: orange; font-size: 30px" />
    </div>
    <p class="component__text2">John Smith - Student</p>
   </div>
@@ -30,6 +37,7 @@
  text-align: start;
 
  &__desc {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,10 +56,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   height: 150px;
   border-radius: 100px;
  }
+}
 
+@media screen and (max-width: 600px) {
+ .component {
+  flex-direction: column;
+ }
 }
 </style>

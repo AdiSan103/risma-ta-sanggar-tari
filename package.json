@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@types/aos": "^3.0.7",
     "@types/bootstrap": "^5.2.10"
   }
 }

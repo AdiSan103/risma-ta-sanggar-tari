@@ -8,9 +8,9 @@
 
     <!-- Basic Meta Tags -->
     <Meta name="description"
-      content="The world's most-loved social storytelling platform. StoryTime connects a global community of 90 million readers and writers through the power of story." />
+      content="Welcome to Mupu Art Dance, where the heart of Balinese tradition comes alive through the beauty of dance." />
     <Meta name="keywords"
-      content="StoryTime, storytelling platform, read stories online, share stories, writers community, writing platform, free stories" />
+      content="Sanggar, Balinese, Dance, Tari, Pulau Dewata, Kesenian" />
     <Meta name="author" content="StoryTime Team" />
     <Meta name="viewport" content="width=device-width, initial-scale=1" />
     <Meta charset="utf-8" />

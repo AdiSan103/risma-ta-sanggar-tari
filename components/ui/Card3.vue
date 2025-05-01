@@ -1,6 +1,11 @@
+<script lang="ts" setup>
+import imgSample from "~/assets/images/2.jpg";
+
+</script>
+
 <template>
  <div class="col component">
-  <img src="https://placehold.co/600x600" alt="image" class="component__image">
+  <img :src="imgSample" alt="image" class="component__image">
   <h4 class="component__text1">Ketut Suletri</h4>
   <p>Instructor</p>
  </div>

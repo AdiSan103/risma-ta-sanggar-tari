@@ -1,6 +1,11 @@
+<script lang="ts" setup>
+import imgSample from "~/assets/images/7.jpg";
+
+</script>
+
 <template>
  <div class="col component">
-  <div class="component__background">
+  <div class="component__background" :style="{ backgroundImage: `url(${imgSample})` }">
    <div class="component__contain">
     <div></div> <!--for make space between -->
     <div class="component__point"></div>
@@ -22,7 +27,6 @@
  }
 
  &__background {
-  background-image: url('https://placehold.co/600x600');
   background-position: center;
   background-size: cover;
   border-radius: 20px;
