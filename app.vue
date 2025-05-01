@@ -4,7 +4,7 @@
 
   <Head>
     <!-- Page Title -->
-    <Title>StoryTime – Read & Share Stories Worldwide</Title>
+    <Title>Sanggar Seni Mupu Art Dance</Title>
 
     <!-- Basic Meta Tags -->
     <Meta name="description"

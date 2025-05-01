@@ -3,12 +3,16 @@
 // Setelah import font, override font di Bootstrap
 $font-family-sans-serif: 'Poppins', sans-serif;
 
+* {
+ font-weight: 500
+}
+
 
 // @use '@/node_modules/bootstrap/scss/bootstrap';
 @import 'bootstrap/scss/bootstrap';
 
 // base color
-$color1: #F7F7;
+$color1: #F7F7F7;
 $color2: #FFB22C;
 $color3: #854836;
 $color4: #000;
