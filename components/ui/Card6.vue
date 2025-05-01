@@ -1,0 +1,63 @@
+<template>
+ <div class="component col">
+  <div class="component__container">
+   <img src="https://placehold.co/600x600" alt="image" class="component__image">
+   <div class="component__content">
+    <p>Category</p>
+    <h5>event: the Mupu Art Dance Cultural Showcase!</h5>
+    <p>This event is not just a performance – it’s a celebration of community, learning, and passion. It’s also a great
+     opportunity for visitors and locals alike to experience the beauty of Balinese dance up close...</p>
+    <div class="component__user">
+     <img src="https://placehold.co/600x600" alt="image" class="component__userimage">
+     <div class="component__userdata">
+      <p class="component__text">BUDI YASIM</p>
+      <p class="component__text">Nov, 11 2022</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</template>
+
+<style lang="scss" scoped>
+.component {
+ text-align: justify;
+
+ &__container {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+ }
+
+ &__content {
+  padding: 20px 10px;
+ }
+
+ &__image {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+ }
+
+ &__user {
+  display: flex;
+  gap: 10px;
+ }
+
+ &__userimage {
+  object-fit: cover;
+  width: 50px;
+  border-radius: 100px;
+  height: 50px;
+ }
+
+ &__text {
+  margin: 0;
+  padding: 0;
+ }
+
+ &__text:nth-child(2) {
+  font-size: 0.7rem;
+ }
+}
+</style>
