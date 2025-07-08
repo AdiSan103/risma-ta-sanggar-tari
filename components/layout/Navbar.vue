@@ -35,7 +35,10 @@ import Logo from "../../assets/images/logo.jpg";
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <a href="#" class="btn btn-warning banner__button"
+          <a
+            href="https://wa.me/6285791585816"
+            class="btn btn-warning banner__button"
+            target="_blank"
             >Contact Us
             <Icon name="tabler:brand-whatsapp" />
           </a>

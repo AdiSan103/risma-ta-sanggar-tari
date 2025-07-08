@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import imgBanner from "~/assets/images/13.jpg";
+// import imgSample from "~/assets/images/7.jpg"; // Bisa ganti tiap gambar
+import imgBaris from "~/assets/images/dances/tari-baris.jpg";
+import imgCondong from "~/assets/images/dances/tari-condong.jpg";
+import imgPendet from "~/assets/images/dances/tari-pendet.jpg";
+import imgPuspanjali from "~/assets/images/dances/tari-puspanjali.jpg";
+import imgWirayudi from "~/assets/images/dances/tari-wirayud.jpg";
+import imgMbYayang from "~/assets/images/tutor/mbok-yayang.jpg";
 
 // meta
 definePageMeta({
@@ -9,6 +16,48 @@ definePageMeta({
 // Create 10 slides
 const containerRef = ref(null);
 const swiper = useSwiper(containerRef);
+
+const instructors = [
+  {
+    name: "Mb Yayang",
+    role: "Guru Tari",
+    image: imgMbYayang,
+  },
+];
+
+//
+const dances = [
+  {
+    title: "Tari Pendet",
+    description:
+      "Tari Pendet adalah tari penyambutan khas Bali yang biasanya dibawakan oleh penari wanita dengan membawa bokor berisi bunga. Tarian ini melambangkan ungkapan selamat datang dan rasa hormat kepada para tamu atau dewa yang turun ke bumi.",
+    image: imgPendet,
+  },
+  {
+    title: "Tari Condong",
+    description:
+      "Tari Condong merupakan tarian pengantar dalam pertunjukan tari Legong. Gerakannya anggun dan penuh ekspresi, menggambarkan seorang dayang yang mendampingi putri raja. Tarian ini sering menjadi dasar teknik untuk penari pemula di Bali.",
+    image: imgCondong,
+  },
+  {
+    title: "Tari Baris",
+    description:
+      "Tari Baris adalah tarian perang tradisional Bali yang dibawakan oleh penari pria. Gerakannya tegas, gagah, dan penuh semangat, menggambarkan keberanian serta kesiapsiagaan seorang prajurit di medan perang.",
+    image: imgBaris,
+  },
+  {
+    title: "Tari Puspanjali",
+    description:
+      "Tari Puspanjali adalah tarian penyambutan modern yang diciptakan sebagai bentuk penghormatan kepada tamu. Dibawakan oleh sekelompok penari wanita, tarian ini menggabungkan gerak klasik dengan nuansa ramah dan penuh keindahan.",
+    image: imgPuspanjali,
+  },
+  {
+    title: "Tari Wirayuda",
+    description:
+      "Tari Wirayuda menggambarkan barisan prajurit kerajaan yang bersiap membela tanah air. Tarian ini dibawakan oleh kelompok penari pria dengan gerakan dinamis, menunjukkan kekompakan, kekuatan, dan jiwa kepahlawanan.",
+    image: imgWirayudi,
+  },
+];
 
 onMounted(() => {
   // Access Swiper instance
@@ -68,9 +117,14 @@ onMounted(() => {
     <div class="container">
       <h2 class="offers__text1"><span>Classes</span> We Offer</h2>
       <div class="row row-cols-lg-3 row-cols-1 offers__cards">
-        <ui-card2 data-aos="zoom-in" />
-        <ui-card2 data-aos="zoom-in" />
-        <ui-card2 data-aos="zoom-in" />
+        <ui-card2
+          data-aos="zoom-in"
+          v-for="(dance, index) in dances"
+          :key="index"
+          :title="dance.title"
+          :description="dance.description"
+          :image="dance.image"
+        />
       </div>
     </div>
   </section>
@@ -109,9 +163,14 @@ onMounted(() => {
     <div class="container">
       <h2 class="teachers__text1">Meet Our<span>Teachers</span></h2>
       <div class="row row-cols-lg-3 row-cols-1 teachers__cards">
-        <ui-card3 data-aos="zoom-in" />
-        <ui-card3 data-aos="zoom-in" />
-        <ui-card3 data-aos="zoom-in" />
+        <ui-card3
+          data-aos="zoom-in"
+          v-for="(inst, index) in instructors"
+          :key="index"
+          :name="inst.name"
+          :role="inst.role"
+          :image="inst.image"
+        />
       </div>
       <a href="#" class="btn btn-warning banner__button"
         >See More!
@@ -123,10 +182,37 @@ onMounted(() => {
   <section id="program" class="pricing">
     <div class="container">
       <h2 class="pricing__text1">Pricing Plan</h2>
-      <div class="row row-cols-lg-3 row-cols-1 pricing__cards">
-        <ui-card4 data-aos="zoom-in" />
-        <ui-card4 data-aos="zoom-in" />
-        <ui-card4 data-aos="zoom-in" />
+      <div class="row row-cols-lg-2 row-cols-1 pricing__cards">
+        <ui-card4
+          data-aos="zoom-in"
+          title="Les Private"
+          price="Rp 75.000 / pertemuan"
+          schedule="Sesuai jadwal pelatih"
+          mentor="Ni Putu Yayang Lorensia Novita, S.Pd."
+          phone="6282144988984"
+          :dances="[
+            'Tari Pendet',
+            'Tari Condong',
+            'Tari Baris',
+            'Tari Puspanjali',
+            'Tari Wirayuda',
+          ]"
+        />
+        <ui-card4
+          data-aos="zoom-in"
+          title="Les Umum"
+          price="Rp 20.000 / bulan"
+          schedule="Setiap hari Minggu"
+          mentor="Ni Putu Yayang Lorensia Novita, S.Pd."
+          phone="6282144988984"
+          :dances="[
+            'Tari Pendet',
+            'Tari Condong',
+            'Tari Baris',
+            'Tari Puspanjali',
+            'Tari Wirayuda',
+          ]"
+        />
       </div>
     </div>
   </section>
@@ -179,8 +265,7 @@ onMounted(() => {
   <!-- maps -->
   <section>
     <iframe
-      data-aos="zoom-in"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.192459526253!2d115.22400397589793!3d-8.67323958829471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f24881c587%3A0xe8413f111e0aa096!2sInstitut%20Teknologi%20Dan%20Bisnis%20STIKOM%20BALI!5e0!3m2!1sid!2sid!4v1751704350509!5m2!1sid!2sid"
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3946.300428563896!2d115.18025837501237!3d-8.470138891570556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjgnMTIuNSJTIDExNcKwMTAnNTguMiJF!5e0!3m2!1sid!2sid!4v1751948926184!5m2!1sid!2sid"
       width="100%"
       height="450"
       style="border: 0"

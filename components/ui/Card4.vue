@@ -1,35 +1,51 @@
 <template>
   <div class="col component">
     <div class="component__content">
-      <h4 class="component__text1">Standard</h4>
-      <p class="component__text2"><span>$30</span>/per month</p>
-      <p class="component__text3">
-        This pack contains all the basic things which makes your workfolow
-        easier!
+      <h4 class="component__text1">{{ title }}</h4>
+      <p class="component__text2">
+        <span>{{ price }}</span>
       </p>
+      <p class="component__text3">{{ schedule }}</p>
+
       <ul class="component__list">
         <li class="component__item">
-          <Icon
-            name="mynaui:check-solid"
-            style="color: black; font-size: 30px"
-          />
-          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <Icon name="mdi:account" style="color: black; font-size: 24px" />
+          <span>Guru: {{ mentor }}</span>
         </li>
         <li class="component__item">
-          <Icon
-            name="mynaui:check-solid"
-            style="color: black; font-size: 30px"
-          />
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <Icon name="mdi:phone" style="color: black; font-size: 24px" />
+          <span>No. Telp: {{ phone }}</span>
         </li>
       </ul>
-      <a href="#" class="btn btn-warning component__button"
-        >See More!
-        <Icon name="tabler:brand-whatsapp" />
+
+      <div class="component__text3">
+        <strong>Jenis Tarian:</strong>
+        <ul>
+          <li v-for="(dance, index) in dances" :key="index">- {{ dance }}</li>
+        </ul>
+      </div>
+
+      <a
+        target="_blank"
+        :href="`https://wa.me/${phone}`"
+        class="btn btn-warning component__button"
+      >
+        Hubungi Kami <Icon name="tabler:brand-whatsapp" />
       </a>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+defineProps<{
+  title: string;
+  price: string;
+  schedule: string;
+  mentor: string;
+  phone: string;
+  dances: string[];
+}>();
+</script>
 
 <style lang="scss" scoped>
 @import "~/assets/main.scss";
@@ -41,11 +57,12 @@
   &__text1 {
     font-weight: 700;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &__text2 {
     text-align: center;
+    margin-bottom: 15px;
 
     span {
       color: $color2;
@@ -56,17 +73,20 @@
 
   &__text3 {
     text-align: justify;
+    margin-bottom: 15px;
   }
 
   &__list {
     list-style: none;
     padding: 0;
+    margin-bottom: 15px;
   }
 
   &__item {
     display: flex;
-    margin: 10px 0;
-    gap: 5px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
   }
 
   &__content {
@@ -74,6 +94,7 @@
     transition: 0.5s;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   &__button {
