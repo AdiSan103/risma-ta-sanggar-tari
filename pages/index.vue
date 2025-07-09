@@ -7,6 +7,24 @@ import imgPendet from "~/assets/images/dances/tari-pendet.jpg";
 import imgPuspanjali from "~/assets/images/dances/tari-puspanjali.jpg";
 import imgWirayudi from "~/assets/images/dances/tari-wirayud.jpg";
 import imgMbYayang from "~/assets/images/tutor/mbok-yayang.jpg";
+import imgDokum1 from "~/assets/images/dokumentasi/(1).jpg";
+import imgDokum2 from "~/assets/images/dokumentasi/(2).jpg";
+import imgDokum3 from "~/assets/images/dokumentasi/(3).jpg";
+import imgDokum4 from "~/assets/images/dokumentasi/(4).jpg";
+import imgDokum5 from "~/assets/images/dokumentasi/(5).jpg";
+import imgDokum6 from "~/assets/images/dokumentasi/(6).jpg";
+import imgDokum7 from "~/assets/images/dokumentasi/(7).jpg";
+import imgDokum8 from "~/assets/images/dokumentasi/(8).jpg";
+import imgDokum9 from "~/assets/images/dokumentasi/(9).jpg";
+import imgDokum10 from "~/assets/images/dokumentasi/(10).jpg";
+import imgDokum11 from "~/assets/images/dokumentasi/(11).jpg";
+import imgDokum12 from "~/assets/images/dokumentasi/(12).jpg";
+import imgDokum13 from "~/assets/images/dokumentasi/(13).jpg";
+import imgDokum14 from "~/assets/images/dokumentasi/(14).jpg";
+import imgDokum15 from "~/assets/images/dokumentasi/(15).jpg";
+import imgDokum16 from "~/assets/images/dokumentasi/(16).jpg";
+import imgDokum17 from "~/assets/images/dokumentasi/(17).jpg";
+import imgDokum18 from "~/assets/images/dokumentasi/(18).jpg";
 
 // meta
 definePageMeta({
@@ -23,6 +41,28 @@ const instructors = [
     role: "Guru Tari",
     image: imgMbYayang,
   },
+];
+
+//
+const imagedokum = [
+  { image: imgDokum1 },
+  { image: imgDokum2 },
+  { image: imgDokum3 },
+  { image: imgDokum4 },
+  { image: imgDokum5 },
+  { image: imgDokum6 },
+  { image: imgDokum7 },
+  { image: imgDokum8 },
+  { image: imgDokum9 },
+  { image: imgDokum10 },
+  { image: imgDokum11 },
+  { image: imgDokum12 },
+  { image: imgDokum13 },
+  { image: imgDokum14 },
+  { image: imgDokum15 },
+  { image: imgDokum16 },
+  { image: imgDokum17 },
+  { image: imgDokum18 },
 ];
 
 //
@@ -94,14 +134,14 @@ onMounted(() => {
       class="banner__wave"
     >
       <path
-        fill="#F7F7F7"
+        fill="#fff"
         fill-opacity="1"
         d="M0,128L21.8,128C43.6,128,87,128,131,112C174.5,96,218,64,262,85.3C305.5,107,349,181,393,197.3C436.4,213,480,171,524,154.7C567.3,139,611,149,655,181.3C698.2,213,742,267,785,266.7C829.1,267,873,213,916,202.7C960,192,1004,224,1047,240C1090.9,256,1135,256,1178,261.3C1221.8,267,1265,277,1309,256C1352.7,235,1396,181,1418,154.7L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
       ></path>
     </svg>
   </section>
   <!-- membership -->
-  <section class="membership">
+  <!-- <section class="membership">
     <div class="container">
       <h2 class="membership__text1">membership <span>Benefits</span></h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -111,7 +151,7 @@ onMounted(() => {
         <ui-card1 data-aos="zoom-in" />
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- offers -->
   <section id="program" class="offers">
     <div class="container">
@@ -249,9 +289,12 @@ onMounted(() => {
       <div class="container">
         <h2 class="post__text1">latest post & Documentation</h2>
         <div class="row row-cols-lg-3 row-cols-1 post__cards">
-          <ui-card6 data-aos="fade-up" />
-          <ui-card6 data-aos="fade-up" />
-          <ui-card6 data-aos="fade-up" />
+          <ui-card6
+            v-for="(inst, index) in imagedokum"
+            :key="index"
+            :image="inst.image"
+            data-aos="fade-up"
+          />
         </div>
         <div class="post__button">
           <a href="#" class="btn btn-warning"
@@ -359,24 +402,24 @@ onMounted(() => {
 }
 
 // membership
-.membership {
-  text-align: center;
-  padding: 40px 10px;
-  background-color: $color1;
+// .membership {
+//   text-align: center;
+//   padding: 40px 10px;
+//   background-color: $color1;
 
-  &__text1 {
-    font-weight: 800;
+//   &__text1 {
+//     font-weight: 800;
 
-    span {
-      color: $color2;
-      font-weight: 800;
-    }
-  }
+//     span {
+//       color: $color2;
+//       font-weight: 800;
+//     }
+//   }
 
-  &__cards {
-    padding: 40px 0;
-  }
-}
+//   &__cards {
+//     padding: 40px 0;
+//   }
+// }
 
 // offers
 .offers {
