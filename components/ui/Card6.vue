@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 defineProps<{
   image: string;
+  title: string;
+  desc: string;
 }>();
 
 // import imgSample from "~/assets/images/9.jpg";
@@ -11,13 +13,10 @@ defineProps<{
       <img :src="image" alt="image" class="component__image" />
       <div class="component__content">
         <p>Sanggar Seni Mupu Art Dance</p>
-        <!-- <h5>event: the Mupu Art Dance Cultural Showcase!</h5> -->
-        <!-- <p>
-          This event is not just a performance – it’s a celebration of
-          community, learning, and passion. It’s also a great opportunity for
-          visitors and locals alike to experience the beauty of Balinese dance
-          up close...
-        </p> -->
+        <h5>{{ title }}</h5>
+        <p>
+          {{ desc }}
+        </p>
         <!-- <div class="component__user">
           <img :src="imgSample" alt="image" class="component__userimage" />
           <div class="component__userdata">

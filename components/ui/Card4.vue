@@ -17,7 +17,7 @@
           <span>No. Telp: {{ phone }}</span>
         </li>
       </ul>
-
+      <p>{{ desc }}</p>
       <div class="component__text3">
         <strong>Jenis Tarian:</strong>
         <ul>
@@ -43,6 +43,7 @@ defineProps<{
   schedule: string;
   mentor: string;
   phone: string;
+  desc: string;
   dances: string[];
 }>();
 </script>

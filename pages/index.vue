@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import imgBanner from "~/assets/images/13.jpg";
+import imgSample2 from "~/assets/images/trophy.png";
 // import imgSample from "~/assets/images/7.jpg"; // Bisa ganti tiap gambar
 import imgBaris from "~/assets/images/dances/tari-baris.jpg";
 import imgCondong from "~/assets/images/dances/tari-condong.jpg";
@@ -44,6 +45,35 @@ const instructors = [
 ];
 
 //
+const testimonials = [
+  {
+    text: "Pengalaman belajar tari di Mupu Art Dance benar-benar luar biasa! Instruktur sangat sabar dan profesional.",
+    name: "Sinta - Mahasiswi",
+    stars: 5,
+  },
+  {
+    text: "Tempatnya nyaman dan pengajarnya ramah. Cocok banget buat liburan sambil belajar budaya.",
+    name: "Rama - Wisatawan Lokal",
+    stars: 4,
+  },
+  {
+    text: "Saya awalnya malu-malu, tapi suasananya bikin nyaman dan percaya diri. Seru banget!",
+    name: "Lia - Pelajar SMA",
+    stars: 5,
+  },
+  {
+    text: "Kegiatan ini membuat saya lebih mengenal budaya Bali. Anak-anak juga sangat menikmatinya.",
+    name: "Bu Ayu - Ibu Rumah Tangga",
+    stars: 4,
+  },
+  {
+    text: "Instruktur sangat profesional dan kelasnya interaktif. Sangat direkomendasikan!",
+    name: "Budi - Orang Tua",
+    stars: 5,
+  },
+];
+
+//
 const imagedokum = [
   { image: imgDokum1 },
   { image: imgDokum2 },
@@ -63,6 +93,45 @@ const imagedokum = [
   { image: imgDokum16 },
   { image: imgDokum17 },
   { image: imgDokum18 },
+];
+
+const posts = [
+  {
+    image: imgDokum18,
+    title: "MUPUFEST #1: LOMBA TARI SEBALI",
+    desc: "MUPUFEST #1 adalah event lomba tari se-Bali yang sukses digelar oleh Sanggar Seni Mupu Art Dance pada tahun lalu. Acara ini menjadi wadah bagi generasi muda untuk menunjukkan bakat dan kecintaannya terhadap seni tari Bali dalam suasana kompetitif namun tetap menjunjung tinggi sportivitas dan kebersamaan. MUPUFEST bukan sekadar lomba, tapi juga ruang berkumpulnya para pecinta seni, pelestari budaya, dan komunitas kreatif. Melihat antusiasme yang tinggi, MUPUFEST kini ditetapkan sebagai agenda tahunan sanggar yang akan terus hadir setiap tahun dengan konsep dan energi yang lebih segar.",
+  },
+  {
+    image: imgDokum18,
+    title: "KENAIKAN TINGKAT TAHUNAN",
+    desc: "Kenaikan Tingkat adalah agenda tahunan Sanggar Seni Mupu Art Dance yang menjadi momen penting bagi setiap siswa. Dalam acara ini, para siswa akan menampilkan hasil latihan mereka selama satu tahun penuh di hadapan pelatih, orang tua, dan tamu undangan. Melalui proses penilaian dan evaluasi, siswa yang telah memenuhi kriteria akan dinyatakan naik ke tingkat selanjutnya. Acara ini tidak hanya menjadi ajang unjuk kemampuan, tetapi juga bentuk apresiasi atas dedikasi, disiplin, dan perkembangan setiap individu dalam menekuni seni tari Bali.",
+  },
+  {
+    image: imgDokum18,
+    title: "LOMBA ANTAR SEKOLAH & NGAYAH RUTIN DI PURA",
+    desc: "Lomba antar sekolah dan ngayah rutin di pura merupakan kegiatan yang rutin dilaksanakan oleh Sanggar Seni Mupu Art Dance. Melalui ajang perlombaan tingkat sekolah, siswa diajak untuk mengasah kepercayaan diri dan mengaplikasikan kemampuan menari yang telah dipelajari di sanggar ke dalam situasi kompetitif. Selain itu, siswa juga secara rutin berpartisipasi dalam kegiatan ngayah di pura-pura sebagai bentuk pengabdian dan pelestarian budaya. Dalam setiap penampilan, para siswa menunjukkan hasil latihan mereka dengan penuh rasa tanggung jawab dan penghormatan terhadap nilai-nilai spiritual dan tradisi Bali.",
+  },
+];
+
+const memberships = [
+  {
+    image: imgSample2,
+    heading: "Pembina Berpengalaman",
+    description:
+      "Latihan langsung bersama pengajar profesional lulusan ISI Bali yang ahli di bidang seni tari Bali.",
+  },
+  {
+    image: imgSample2,
+    heading: "Panggung Ekspresi Budaya",
+    description:
+      "Kesempatan tampil dalam pementasan budaya, baik di tingkat daerah, kabupaten, provinsi hingga nasional",
+  },
+  {
+    image: imgSample2,
+    heading: "Pembinaan dan Pelestarian",
+    description:
+      "Menjadi bagian dari generasi muda yang aktif melestarikan budaya dan mengembangkan potensi diri melalui seni.",
+  },
 ];
 
 //
@@ -121,8 +190,8 @@ onMounted(() => {
         Sanggar Seni Mupu Art Dance
       </h1>
       <p class="banner__text2" data-aos="fade-up">
-        Welcome to Mupu Art Dance, where the heart of Balinese tradition comes
-        alive through the beauty of dance.
+        Selamat datang di Website Sanggar Seni Mupu Art Dance, Membina Generasi
+        Muda Melalui Seni Tari Bali dan Warisan Budaya Luhur.
       </p>
       <a href="#" class="btn btn-warning banner__button" data-aos="zoom-in"
         >Let's Learn Right Now!</a
@@ -134,24 +203,32 @@ onMounted(() => {
       class="banner__wave"
     >
       <path
-        fill="#fff"
+        fill="#F7F7F7"
         fill-opacity="1"
         d="M0,128L21.8,128C43.6,128,87,128,131,112C174.5,96,218,64,262,85.3C305.5,107,349,181,393,197.3C436.4,213,480,171,524,154.7C567.3,139,611,149,655,181.3C698.2,213,742,267,785,266.7C829.1,267,873,213,916,202.7C960,192,1004,224,1047,240C1090.9,256,1135,256,1178,261.3C1221.8,267,1265,277,1309,256C1352.7,235,1396,181,1418,154.7L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
       ></path>
     </svg>
   </section>
   <!-- membership -->
-  <!-- <section class="membership">
+  <section class="membership">
     <div class="container">
       <h2 class="membership__text1">membership <span>Benefits</span></h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <p>
+        Mari tumbuh dan berkembang bersama Sanggar Seni Mupu Art Dance, tempat
+        di mana seni dan budaya diwariskan dengan sepenuh hati.
+      </p>
       <div class="row row-cols-lg-3 row-cols-1 membership__cards">
-        <ui-card1 data-aos="zoom-in" />
-        <ui-card1 data-aos="zoom-in" />
-        <ui-card1 data-aos="zoom-in" />
+        <ui-card1
+          data-aos="zoom-in"
+          v-for="(item, index) in memberships"
+          :key="index"
+          :imageSrc="item.image"
+          :heading="item.heading"
+          :description="item.description"
+        />
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- offers -->
   <section id="program" class="offers">
     <div class="container">
@@ -185,15 +262,22 @@ onMounted(() => {
         <div class="col aboutus__right">
           <h2>Welcome To Mupu Art Dance</h2>
           <p>
-            At our studio, we invite you to experience the vibrant spirit of
-            Bali, learning the graceful movements and deep cultural meaning
-            behind each dance. Whether you are a beginner or a seasoned dancer,
-            our programs are designed to inspire and connect you with the true
-            soul of Balinese heritage.
+            <b> Sanggar Seni Mupu Art Dance</b> merupakan sebuah wadah pembinaan
+            seni tari tradisional Bali yang bertujuan untuk melestarikan budaya
+            melalui pelatihan, pertunjukan, dan pendidikan karakter. Kami
+            menyediakan pelatihan tari bagi semua kalangan, mulai dari anak-anak
+            hingga dewasa, dengan pendekatan yang profesional dan berlandaskan
+            pada kekayaan tradisi. Beberapa jenis tari yang diajarkan antara
+            lain Tari Pendet, Condong, Baris, Puspanjali, Wirayuda, serta
+            beberapa Tari Kreasi dan Tari Kontemporer
           </p>
-          <button href="#" class="btn btn-warning banner__button">
-            Let's Learn Right Now!
-          </button>
+          <p>
+            Melalui kegiatan rutin seperti ujian kenaikan tingkat, pementasan di
+            pura-pura, dan program pelatihan intensif, Sanggar Seni Mupu Art
+            Dance hadir sebagai ruang bagi generasi muda untuk belajar, tumbuh,
+            dan berkontribusi dalam menjaga warisan budaya Bali agar tetap hidup
+            dan berkembang.
+          </p>
         </div>
       </div>
     </div>
@@ -230,6 +314,7 @@ onMounted(() => {
           schedule="Sesuai jadwal pelatih"
           mentor="Ni Putu Yayang Lorensia Novita, S.Pd."
           phone="6282144988984"
+          desc="Paket ini mencakup latihan dasar seni tari Bali untuk anak-anak dan pemula yang ingin belajar secara konsisten dan menyenangkan."
           :dances="[
             'Tari Pendet',
             'Tari Condong',
@@ -245,6 +330,7 @@ onMounted(() => {
           schedule="Setiap hari Minggu"
           mentor="Ni Putu Yayang Lorensia Novita, S.Pd."
           phone="6282144988984"
+          desc="Latihan private ini ditujukan bagi peserta yang ingin mendapatkan bimbingan lebih intensif secara satu per satu dengan pelatih. Cocok untuk pemula yang ingin cepat menguasai dasar tari, atau penari yang ingin memperdalam teknik dan ekspresi."
           :dances="[
             'Tari Pendet',
             'Tari Condong',
@@ -259,8 +345,10 @@ onMounted(() => {
   <!-- testimonials -->
   <section class="testimonials">
     <div class="container">
-      <h2 class="testimonials__text1">Testimonials</h2>
-      <p class="testimonials__text2">what members are saying</p>
+      <h2 class="testimonials__text1">Apa Kata Mereka?</h2>
+      <p class="testimonials__text2">
+        Pendapat kesan dan pesan murid dan orang tua siswa kami
+      </p>
       <!-- slider -->
       <div class="testimonials__container">
         <ClientOnly>
@@ -269,14 +357,13 @@ onMounted(() => {
             :navigation="true"
             :pagination="true"
           >
-            <swiper-slide>
-              <ui-card5 />
-            </swiper-slide>
-            <swiper-slide>
-              <ui-card5 />
-            </swiper-slide>
-            <swiper-slide>
-              <ui-card5 />
+            <swiper-slide v-for="(item, index) in testimonials" :key="index">
+              <ui-card5
+                :image="imgSample2"
+                :text="item.text"
+                :name="item.name"
+                :stars="item.stars"
+              />
             </swiper-slide>
           </swiper-container>
         </ClientOnly>
@@ -287,21 +374,31 @@ onMounted(() => {
   <section class="post">
     <div class="post__container">
       <div class="container">
-        <h2 class="post__text1">latest post & Documentation</h2>
+        <h2 class="post__text1">Kegiatan dan Aktivitas Kami</h2>
         <div class="row row-cols-lg-3 row-cols-1 post__cards">
           <ui-card6
-            v-for="(inst, index) in imagedokum"
+            v-for="(inst, index) in posts"
             :key="index"
             :image="inst.image"
+            :title="inst.title"
+            :desc="inst.desc"
             data-aos="fade-up"
           />
         </div>
-        <div class="post__button">
-          <a href="#" class="btn btn-warning"
-            >See More!
-            <Icon name="tabler:brand-whatsapp" />
-          </a>
-        </div>
+      </div>
+    </div>
+  </section>
+  <!-- documentation -->
+  <section class="photo">
+    <div class="container">
+      <h2 class="photo__text1">Dokumentasi Kegiatan</h2>
+      <div class="row row-cols-lg-3 row-cols-1 post__cards">
+        <ui-card7
+          v-for="(inst, index) in imagedokum"
+          :key="index"
+          :image="inst.image"
+          data-aos="fade-up"
+        />
       </div>
     </div>
   </section>
@@ -321,26 +418,46 @@ onMounted(() => {
   <section id="contactus" class="contactus">
     <div class="container">
       <div class="contactus__container">
-        <h2>Any Question?<span>Let's Contact Us</span></h2>
+        <h2>Any Question?<span> Let's Contact Us</span></h2>
         <p>
           Join us and embark on a captivating journey through the arts, culture,
           and spirit of Bali!
         </p>
         <ul>
-          <li>📍 Location:</li>
-          <li>📞 Number Phone:</li>
-          <li>Social Media :</li>
+          <li>
+            📍 Location:
+            <a
+              href="https://maps.app.goo.gl/BKXC7AkKNhjrWyL46?g_st=com.google.maps.preview.copy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Jl. Arjuna, Br. Dajan Peken, Sembung, Kec. Mengwi, Kab. Badung</a
+            >
+          </li>
+          <li>📞 Number Phone: <a href="tel:085791585816">085791585816</a></li>
+          <li>
+            📱 Social Media:
+            <a
+              href="https://instagram.com/mupuartcolletion"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@mupuartcolletion</a
+            >
+          </li>
         </ul>
         <div class="contactus__form">
           <input
             type="text"
             class="contactus__input"
-            placeholder="send us a message..."
+            placeholder="Send us a message..."
           />
-          <button class="btn btn-warning contactus__button">
+          <a
+            class="btn btn-warning contactus__button"
+            :href="`https://wa.me/6285791585816?text=Halo%20Mupu%20Art%20Collection%2C%20saya%20tertarik%20dan%20ingin%20bertanya...`"
+            target="_blank"
+          >
             Send Whatsapp
             <Icon name="tabler:brand-whatsapp" />
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -402,24 +519,24 @@ onMounted(() => {
 }
 
 // membership
-// .membership {
-//   text-align: center;
-//   padding: 40px 10px;
-//   background-color: $color1;
+.membership {
+  text-align: center;
+  padding: 40px 10px;
+  background-color: $color1;
 
-//   &__text1 {
-//     font-weight: 800;
+  &__text1 {
+    font-weight: 800;
 
-//     span {
-//       color: $color2;
-//       font-weight: 800;
-//     }
-//   }
+    span {
+      color: $color2;
+      font-weight: 800;
+    }
+  }
 
-//   &__cards {
-//     padding: 40px 0;
-//   }
-// }
+  &__cards {
+    padding: 40px 0;
+  }
+}
 
 // offers
 .offers {
@@ -553,6 +670,14 @@ onMounted(() => {
     display: flex;
     justify-content: center;
     margin: 30px auto;
+  }
+}
+
+// photo
+.photo {
+  &__text1 {
+    text-align: center;
+    padding-top: 50px;
   }
 }
 
