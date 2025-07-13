@@ -48,7 +48,7 @@ defineProps<{
   }
 
   &__text1 {
-    color: white;
+    color: #fff;
     font-weight: 700;
   }
 

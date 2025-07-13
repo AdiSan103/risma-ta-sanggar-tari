@@ -467,6 +467,18 @@ onMounted(() => {
 <style lang="scss" scoped>
 @import "~/assets/main.scss";
 
+// #FEE160
+// #C61D48
+// #F7D7CE
+
+// component
+.btn-warning {
+  background-color: #c61d48;
+  color: white;
+  border: #c61d48;
+  outline: #c61d48;
+}
+
 // default
 // banner
 .banner {
@@ -660,6 +672,7 @@ onMounted(() => {
   &__text1 {
     text-align: center;
     font-weight: 800;
+    color: $color3;
   }
 
   &__cards {
@@ -678,6 +691,8 @@ onMounted(() => {
   &__text1 {
     text-align: center;
     padding-top: 50px;
+    font-weight: 800;
+    color: $color3;
   }
 }
 

@@ -17,7 +17,7 @@ defineProps<{
           v-for="n in stars || 5"
           :key="n"
           name="mynaui:star-solid"
-          style="color: orange; font-size: 30px"
+          style="color: #fee160; font-size: 30px"
         />
       </div>
       <p class="component__text2">{{ name }}</p>

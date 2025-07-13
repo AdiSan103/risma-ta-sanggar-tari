@@ -52,4 +52,7 @@ import Logo from "../../assets/images/logo.jpg";
 .navbar__logo {
   width: 50px;
 }
+.btn-warning {
+  background-color: #fee160;
+}
 </style>

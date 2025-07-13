@@ -50,7 +50,9 @@ defineProps<{
 
 <style lang="scss" scoped>
 @import "~/assets/main.scss";
-
+.btn-warning {
+  background-color: #fee160;
+}
 .component {
   padding: 40px 20px;
   cursor: pointer;
@@ -66,7 +68,7 @@ defineProps<{
     margin-bottom: 15px;
 
     span {
-      color: $color2;
+      color: $color3;
       font-size: 1.5rem;
       font-weight: 700;
     }

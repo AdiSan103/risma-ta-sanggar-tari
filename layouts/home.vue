@@ -2,13 +2,13 @@
 import { onMounted, ref } from "vue";
 import Logo from "../assets/images/logo.jpg";
 
-const showLoading = ref(true);
+// const showLoading = ref(true);
 
-onMounted(() => {
-  setTimeout(() => {
-    showLoading.value = false;
-  }, 2000); // 1.5 seconds
-});
+// onMounted(() => {
+//   setTimeout(() => {
+//     showLoading.value = false;
+//   }, 2000); // 1.5 seconds
+// });
 
 // seo
 useHead({
@@ -50,11 +50,11 @@ useHead({
 </script>
 
 <template>
-  <transition name="slide-up">
+  <!-- <transition name="slide-up">
     <div v-if="showLoading" class="loading">
       <img :src="Logo" alt="image" class="loading__logo" data-aos="zoom-in" />
     </div>
-  </transition>
+  </transition> -->
 
   <main>
     <layout-navbar />
