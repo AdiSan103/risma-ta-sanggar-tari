@@ -54,8 +54,10 @@
               style="width: 60px; background-color: #7c4dff; height: 2px"
             />
             <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              SANGGAR SENI MUPU ART DANCE<br />
+              Menumbuhkan cinta budaya sejak dini melalui seni tari Bali.<br />
+              Kami hadir untuk membina, melatih, dan mewadahi generasi muda
+              dalam mengekspresikan diri lewat gerak dan makna.
             </p>
           </div>
 
@@ -91,14 +93,16 @@
               style="width: 60px; background-color: #7c4dff; height: 2px"
             />
             <p class="flex items-center text-white mb-2">
-              <Icon name="fa6-solid:house" class="mr-3" /> New York, NY 10012,
-              US
+              <Icon name="fa6-solid:house" class="mr-3" />
+              Jl. Arjuna, Br. Dajan Peken, Sembung, Kec. Mengwi, Kab. Badung
             </p>
             <p class="flex items-center text-white mb-2">
-              <Icon name="fa6-solid:envelope" class="mr-3" /> info@example.com
+              <Icon name="fa6-solid:envelope" class="mr-3" />
+              mupuartdance@gmail.com
             </p>
             <p class="flex items-center text-white mb-2">
-              <Icon name="fa6-solid:phone" class="mr-3" /> + 01 234 567 88
+              <Icon name="fa6-solid:phone" class="mr-3" />
+              085791585816
             </p>
           </div>
           <!-- Grid column -->

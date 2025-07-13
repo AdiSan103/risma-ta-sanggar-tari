@@ -3,6 +3,7 @@ defineProps<{
   name: string;
   role: string;
   image: string;
+  desc: string;
 }>();
 </script>
 
@@ -10,7 +11,8 @@ defineProps<{
   <div class="col component">
     <img :src="image" :alt="name" class="component__image" />
     <h4 class="component__text1">{{ name }}</h4>
-    <p>{{ role }}</p>
+    <p class="component__text2">{{ role }}</p>
+    <p>{{ desc }}</p>
   </div>
 </template>
 
@@ -28,6 +30,12 @@ defineProps<{
 
   &__text1 {
     font-weight: 800;
+  }
+
+  &__text2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
   }
 }
 </style>

@@ -26,7 +26,9 @@ import imgDokum15 from "~/assets/images/dokumentasi/15.jpg";
 import imgDokum16 from "~/assets/images/dokumentasi/16.jpg";
 import imgDokum17 from "~/assets/images/dokumentasi/17.jpg";
 import imgDokum18 from "~/assets/images/dokumentasi/18.jpg";
-
+import img14 from "~/assets/images/14.jpg";
+import img15 from "~/assets/images/15.jpg";
+import img16 from "~/assets/images/16.jpg";
 // meta
 definePageMeta({
   layout: "home",
@@ -38,8 +40,9 @@ const swiper = useSwiper(containerRef);
 
 const instructors = [
   {
-    name: "Mb Yayang",
+    name: "Ni Putu Yayang Lorensia Novita, S.Pd.",
     role: "Guru Tari",
+    desc: " Pemilik sekaligus pelatih lulusan ISI Bali yang memiliki kompetensi dalam mengajar di bidang seni budaya Bali.",
     image: imgMbYayang,
   },
 ];
@@ -97,17 +100,17 @@ const imagedokum = [
 
 const posts = [
   {
-    image: imgDokum18,
+    image: img14,
     title: "MUPUFEST #1: LOMBA TARI SEBALI",
     desc: "MUPUFEST #1 adalah event lomba tari se-Bali yang sukses digelar oleh Sanggar Seni Mupu Art Dance pada tahun lalu. Acara ini menjadi wadah bagi generasi muda untuk menunjukkan bakat dan kecintaannya terhadap seni tari Bali dalam suasana kompetitif namun tetap menjunjung tinggi sportivitas dan kebersamaan. MUPUFEST bukan sekadar lomba, tapi juga ruang berkumpulnya para pecinta seni, pelestari budaya, dan komunitas kreatif. Melihat antusiasme yang tinggi, MUPUFEST kini ditetapkan sebagai agenda tahunan sanggar yang akan terus hadir setiap tahun dengan konsep dan energi yang lebih segar.",
   },
   {
-    image: imgDokum18,
+    image: img15,
     title: "KENAIKAN TINGKAT TAHUNAN",
     desc: "Kenaikan Tingkat adalah agenda tahunan Sanggar Seni Mupu Art Dance yang menjadi momen penting bagi setiap siswa. Dalam acara ini, para siswa akan menampilkan hasil latihan mereka selama satu tahun penuh di hadapan pelatih, orang tua, dan tamu undangan. Melalui proses penilaian dan evaluasi, siswa yang telah memenuhi kriteria akan dinyatakan naik ke tingkat selanjutnya. Acara ini tidak hanya menjadi ajang unjuk kemampuan, tetapi juga bentuk apresiasi atas dedikasi, disiplin, dan perkembangan setiap individu dalam menekuni seni tari Bali.",
   },
   {
-    image: imgDokum18,
+    image: img16,
     title: "LOMBA ANTAR SEKOLAH & NGAYAH RUTIN DI PURA",
     desc: "Lomba antar sekolah dan ngayah rutin di pura merupakan kegiatan yang rutin dilaksanakan oleh Sanggar Seni Mupu Art Dance. Melalui ajang perlombaan tingkat sekolah, siswa diajak untuk mengasah kepercayaan diri dan mengaplikasikan kemampuan menari yang telah dipelajari di sanggar ke dalam situasi kompetitif. Selain itu, siswa juga secara rutin berpartisipasi dalam kegiatan ngayah di pura-pura sebagai bentuk pengabdian dan pelestarian budaya. Dalam setiap penampilan, para siswa menunjukkan hasil latihan mereka dengan penuh rasa tanggung jawab dan penghormatan terhadap nilai-nilai spiritual dan tradisi Bali.",
   },
@@ -286,7 +289,9 @@ onMounted(() => {
   <section class="teachers">
     <div class="container">
       <h2 class="teachers__text1">Meet Our<span>Teachers</span></h2>
-      <div class="row row-cols-lg-3 row-cols-1 teachers__cards">
+      <div
+        class="row row-cols-lg-2 row-cols-1 teachers__cards justify-content-center"
+      >
         <ui-card3
           data-aos="zoom-in"
           v-for="(inst, index) in instructors"
@@ -294,6 +299,7 @@ onMounted(() => {
           :name="inst.name"
           :role="inst.role"
           :image="inst.image"
+          :desc="inst.desc"
         />
       </div>
       <a href="#" class="btn btn-warning banner__button"
