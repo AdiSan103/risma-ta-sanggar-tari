@@ -1,0 +1,160 @@
+{
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "program": "Program",
+    "contact_us": "Hubungi Kami",
+    "language_switcher": "Pilih Bahasa"
+  },
+  "home": {
+    "title": "Beranda",
+    "description": "Selamat datang di Website Sanggar Seni Mupu Art Dance, Membina Generasi Muda Melalui Seni Tari Bali dan Warisan Budaya Luhur.",
+    "button": "Ayo Belajar Sekarang Juga"
+  },
+  "benefit": {
+    "title": "Manfaat Belajar Tari Bali",
+    "description": "Belajar tari Bali tidak hanya mengajarkan gerakan, tetapi juga memperkaya jiwa dan budaya. Dengan belajar tari Bali, Anda akan merasakan manfaat yang mendalam dalam kehidupan sehari-hari.",
+    "items": [
+      {
+        "title": "Pembina Berpengalaman",
+        "description": "Latihan langsung bersama pengajar profesional lulusan ISI Bali yang ahli di bidang seni tari Bali."
+      },
+      {
+        "title": "Panggung Ekspresi Budaya",
+        "description": "Kesempatan tampil dalam pementasan budaya, baik di tingkat daerah, kabupaten, provinsi hingga nasional."
+      },
+      {
+        "title": "Pembinaan dan Pelestarian",
+        "description": "Menjadi bagian dari generasi muda yang aktif melestarikan budaya dan mengembangkan potensi diri melalui seni."
+      }
+    ]
+  },
+    "offer": {
+    "title": "Kelas yang tersedia",
+    "items": [
+        {
+        "title": "Tari Pendet",
+        "description": "Tari Pendet adalah tari penyambutan khas Bali yang biasanya dibawakan oleh penari wanita dengan membawa bokor berisi bunga. Tarian ini melambangkan ungkapan selamat datang dan rasa hormat kepada para tamu atau dewa yang turun ke bumi."
+        },
+        {
+        "title": "Tari Condong",
+        "description": "Tari Condong merupakan tarian pengantar dalam pertunjukan tari Legong. Gerakannya anggun dan penuh ekspresi, menggambarkan seorang dayang yang mendampingi putri raja. Tarian ini sering menjadi dasar teknik untuk penari pemula di Bali."
+        },
+        {
+        "title": "Tari Baris",
+        "description": "Tari Baris adalah tarian perang tradisional Bali yang dibawakan oleh penari pria. Gerakannya tegas, gagah, dan penuh semangat, menggambarkan keberanian serta kesiapsiagaan seorang prajurit di medan perang."
+        },
+        {
+        "title": "Tari Puspanjali",
+        "description": "Tari Puspanjali adalah tarian penyambutan modern yang diciptakan sebagai bentuk penghormatan kepada tamu. Dibawakan oleh sekelompok penari wanita, tarian ini menggabungkan gerak klasik dengan nuansa ramah dan penuh keindahan."
+        },
+        {
+        "title": "Tari Wirayuda",
+        "description": "Tari Wirayuda menggambarkan barisan prajurit kerajaan yang bersiap membela tanah air. Tarian ini dibawakan oleh kelompok penari pria dengan gerakan dinamis, menunjukkan kekompakan, kekuatan, dan jiwa kepahlawanan."
+        }
+    ]
+    },
+  "aboutus": {
+    "title": "Tentang kami",
+    "description": "Sanggar Seni Mupu Art Dance merupakan sebuah wadah pembinaan seni tari tradisional Bali yang bertujuan untuk melestarikan budaya melalui pelatihan, pertunjukan, dan pendidikan karakter. Kami menyediakan pelatihan tari bagi semua kalangan, mulai dari anak-anak hingga dewasa, dengan pendekatan yang profesional dan berlandaskan pada kekayaan tradisi. Beberapa jenis tari yang diajarkan antara lain Tari Pendet, Condong, Baris, Puspanjali, Wirayuda, serta beberapa Tari Kreasi dan Tari Kontemporer.\n\nMelalui kegiatan rutin seperti ujian kenaikan tingkat, pementasan di pura-pura, dan program pelatihan intensif, Sanggar Seni Mupu Art Dance hadir sebagai ruang bagi generasi muda untuk belajar, tumbuh, dan berkontribusi dalam menjaga warisan budaya Bali agar tetap hidup dan berkembang."
+  },
+  "tutor": {
+    "title": "Pengajar Kami",
+    "items": [
+      {
+        "title": "Ni Putu Yayang Lorensia Novita, S.Pd.",
+        "job": "Pengajar Tari",
+        "description": "Pemilik sekaligus pelatih lulusan ISI Bali yang memiliki kompetensi dalam mengajar di bidang seni budaya Bali."
+      }
+    ]
+  },
+    "pricings": {
+    "title": "Harga Kelas",
+    "items": [
+        {
+        "label": "Les Private",
+        "price": "Rp 75.000 / pertemuan",
+        "date": "Sesuai jadwal pelatih",
+        "teacher": "Guru: Ni Putu Yayang Lorensia Novita, S.Pd.",
+        "call": "No. Telp: 6282144988984",
+        "desc": "Paket ini mencakup latihan dasar seni tari Bali untuk anak-anak dan pemula yang ingin belajar secara konsisten dan menyenangkan.",
+        "desc2": "Jenis Tarian:\n- Tari Pendet\n- Tari Condong\n- Tari Baris\n- Tari Puspanjali\n- Tari Wirayuda",
+        "desc3": "Hubungi Kami"
+        },
+        {
+        "label": "Les Umum",
+        "price": "Rp 20.000 / bulan",
+        "date": "Setiap hari Minggu",
+        "teacher": "Guru: Ni Putu Yayang Lorensia Novita, S.Pd.",
+        "call": "No. Telp: 6282144988984",
+        "desc": "Latihan ini ditujukan bagi peserta yang ingin mendapatkan bimbingan lebih intensif secara satu per satu dengan pelatih. Cocok untuk pemula yang ingin cepat menguasai dasar tari, atau penari yang ingin memperdalam teknik dan ekspresi.",
+        "desc2": "Jenis Tarian:\n- Tari Pendet\n- Tari Condong\n- Tari Baris\n- Tari Puspanjali\n- Tari Wirayuda",
+        "desc3": "Hubungi Kami"
+        }
+    ]
+    },
+    "testimoni": {
+    "title": "Apa Kata Mereka?",
+    "desc": "Pendapat kesan dan pesan murid dan orang tua siswa kami",
+    "items": [
+        {
+        "name": "Ni Luh Ayu Sari",
+        "star": 5,
+        "feedback": "Belajar di Sanggar Seni Mupu Art Dance sangat menyenangkan! Saya belajar banyak tentang tari Bali dan budaya kami."
+        },
+        {
+        "name": "I Made Arya",
+        "star": 5,
+        "feedback": "Pelatih sangat sabar dan profesional. Anak saya jadi lebih percaya diri saat tampil di panggung."
+        },
+        {
+        "name": "Kadek Wulandari",
+        "star": 4,
+        "feedback": "Tempat yang ideal untuk anak-anak belajar tari Bali. Suasana latihan juga menyenangkan dan mendidik."
+        },
+        {
+        "name": "Desak Putri Paramita",
+        "star": 5,
+        "feedback": "Senang sekali bisa menjadi bagian dari sanggar ini. Saya merasa lebih terhubung dengan budaya Bali."
+        },
+        {
+        "name": "Gusti Agung Bima",
+        "star": 4,
+        "feedback": "Kurikulum latihan sangat bagus. Semoga ke depannya bisa ditambah kelas untuk tari kontemporer juga."
+        },
+        {
+        "name": "Ni Komang Sari Dewi",
+        "star": 5,
+        "feedback": "Anak saya senang sekali ikut latihan di sini. Tidak hanya belajar tari, tapi juga belajar disiplin dan kerja sama."
+        }
+    ]
+    },
+  "activities": {
+    "title": "Kegiatan dan Aktivitas Kami",
+    "items": [
+      {
+        "title": "MUPUFEST #1: LOMBA TARI SEBALI",
+        "desc": "MUPUFEST #1 adalah event lomba tari se-Bali yang sukses digelar oleh Sanggar Seni Mupu Art Dance pada tahun lalu. Acara ini menjadi wadah bagi generasi muda untuk menunjukkan bakat dan kecintaannya terhadap seni tari Bali dalam suasana kompetitif namun tetap menjunjung tinggi sportivitas dan kebersamaan. MUPUFEST bukan sekadar lomba, tapi juga ruang berkumpulnya para pecinta seni, pelestari budaya, dan komunitas kreatif. Melihat antusiasme yang tinggi, MUPUFEST kini ditetapkan sebagai agenda tahunan sanggar yang akan terus hadir setiap tahun dengan konsep dan energi yang lebih segar."
+      },
+            {
+        "title": "KENAIKAN TINGKAT TAHUNAN",
+        "desc": "Kenaikan Tingkat adalah agenda tahunan Sanggar Seni Mupu Art Dance yang menjadi momen penting bagi setiap siswa. Dalam acara ini, para siswa akan menampilkan hasil latihan mereka selama satu tahun penuh di hadapan pelatih, orang tua, dan tamu undangan. Melalui proses penilaian dan evaluasi, siswa yang telah memenuhi kriteria akan dinyatakan naik ke tingkat selanjutnya. Acara ini tidak hanya menjadi ajang unjuk kemampuan, tetapi juga bentuk apresiasi atas dedikasi, disiplin, dan perkembangan setiap individu dalam menekuni seni tari Bali."
+      },
+            {
+        "title": "LOMBA ANTAR SEKOLAH & NGAYAH RUTIN DI PURA",
+        "desc": "Lomba antar sekolah dan ngayah rutin di pura merupakan kegiatan yang rutin dilaksanakan oleh Sanggar Seni Mupu Art Dance. Melalui ajang perlombaan tingkat sekolah, siswa diajak untuk mengasah kepercayaan diri dan mengaplikasikan kemampuan menari yang telah dipelajari di sanggar ke dalam situasi kompetitif. Selain itu, siswa juga secara rutin berpartisipasi dalam kegiatan ngayah di pura-pura sebagai bentuk pengabdian dan pelestarian budaya. Dalam setiap penampilan, para siswa menunjukkan hasil latihan mereka dengan penuh rasa tanggung jawab dan penghormatan terhadap nilai-nilai spiritual dan tradisi Bali."
+      }
+    ]
+  },
+  "documentation": {
+    "title": "Dokumentasi Kegiatan"
+  },
+  "contactus": {
+    "title": "Hubungi Kami",
+    "desc": "Jika Anda memiliki pertanyaan atau ingin bergabung dengan kami, silakan hubungi kami melalui form di bawah ini."
+  },
+  "footer": {
+    "title1": "Hubungi Kami:",
+    "desc": "SANGGAR SENI MUPU ART DANCE\nMenumbuhkan cinta budaya sejak dini melalui seni tari Bali.\nKami hadir untuk membina, melatih, dan mewadahi generasi muda dalam mengekspresikan diri lewat gerak dan makna."
+  }
+}

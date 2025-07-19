@@ -1,0 +1,160 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "program": "Program",
+    "contact_us": "Contact Us",
+    "language_switcher": "Choose Language"
+  },
+  "home": {
+    "title": "Home",
+    "description": "Welcome to Sanggar Seni Mupu Art Dance Website, Empowering the Young Generation Through Balinese Dance and Noble Cultural Heritage.",
+    "button": "Let's Learn Right Now"
+  },
+  "benefit": {
+    "title": "Benefits of Learning Balinese Dance",
+    "description": "Learning Balinese dance not only teaches movements but also enriches the soul and culture. By learning Balinese dance, you will experience deep benefits in your daily life.",
+    "items": [
+      {
+        "title": "Experienced Instructor",
+        "description": "Practice directly with professional instructors who are graduates of ISI Bali and experts in Balinese dance arts."
+      },
+      {
+        "title": "Cultural Expression Stage",
+        "description": "Opportunities to perform in cultural showcases at regional, district, provincial, and even national levels."
+      },
+      {
+        "title": "Guidance and Preservation",
+        "description": "Be part of a young generation actively preserving culture and developing self-potential through art."
+      }
+    ]
+  },
+  "offer": {
+    "title": "Available Classes",
+    "items": [
+      {
+        "title": "Tari Pendet",
+        "description": "Tari Pendet is a traditional Balinese welcoming dance typically performed by female dancers carrying flower-filled bowls. It symbolizes greetings and respect for guests or deities descending to Earth."
+      },
+      {
+        "title": "Tari Condong",
+        "description": "Tari Condong is a prelude dance in the Legong performance. Its graceful and expressive movements depict a maid accompanying a princess, often used as basic training for beginner dancers in Bali."
+      },
+      {
+        "title": "Tari Baris",
+        "description": "Tari Baris is a traditional Balinese warrior dance performed by male dancers. It features bold and powerful movements that reflect a warrior's courage and readiness on the battlefield."
+      },
+      {
+        "title": "Tari Puspanjali",
+        "description": "Tari Puspanjali is a modern welcoming dance created as a tribute to guests. Performed by a group of female dancers, it blends classical movements with grace and charm."
+      },
+      {
+        "title": "Tari Wirayuda",
+        "description": "Tari Wirayuda depicts a battalion of royal soldiers preparing to defend the homeland. Performed by male dancers, it showcases unity, strength, and heroism."
+      }
+    ]
+  },
+  "aboutus": {
+    "title": "About Us",
+    "description": "Sanggar Seni Mupu Art Dance is a center for traditional Balinese dance training dedicated to preserving culture through training, performances, and character education. We provide dance training for all ages, from children to adults, with a professional approach rooted in cultural heritage. Dances taught include Tari Pendet, Condong, Baris, Puspanjali, Wirayuda, as well as several contemporary and creative dances.\n\nThrough regular events like level tests, temple performances, and intensive training programs, Sanggar Seni Mupu Art Dance serves as a space for the younger generation to learn, grow, and contribute to keeping Balinese culture alive and thriving."
+  },
+  "tutor": {
+    "title": "Our Instructor",
+    "items": [
+      {
+        "title": "Ni Putu Yayang Lorensia Novita, S.Pd.",
+        "job": "Dance Instructor",
+        "description": "Owner and instructor, graduate of ISI Bali, with expertise in teaching Balinese cultural arts."
+      }
+    ]
+  },
+  "pricings": {
+    "title": "Class Pricing",
+    "items": [
+      {
+        "label": "Private Lesson",
+        "price": "Rp 75,000 / session",
+        "date": "By appointment",
+        "teacher": "Instructor: Ni Putu Yayang Lorensia Novita, S.Pd.",
+        "call": "Phone: 6282144988984",
+        "desc": "This package includes basic Balinese dance training for children and beginners who want to learn consistently and joyfully.",
+        "desc2": "Dance Types:\n- Tari Pendet\n- Tari Condong\n- Tari Baris\n- Tari Puspanjali\n- Tari Wirayuda",
+        "desc3": "Contact Us"
+      },
+      {
+        "label": "General Class",
+        "price": "Rp 20,000 / month",
+        "date": "Every Sunday",
+        "teacher": "Instructor: Ni Putu Yayang Lorensia Novita, S.Pd.",
+        "call": "Phone: 6282144988984",
+        "desc": "This training is intended for participants who want more intensive one-on-one guidance with the instructor. Suitable for beginners who want to quickly master the basics or dancers aiming to deepen technique and expression.",
+        "desc2": "Dance Types:\n- Tari Pendet\n- Tari Condong\n- Tari Baris\n- Tari Puspanjali\n- Tari Wirayuda",
+        "desc3": "Contact Us"
+      }
+    ]
+  },
+  "testimoni": {
+    "title": "What Do They Say?",
+    "desc": "Testimonials and impressions from our students and their parents",
+    "items": [
+      {
+        "name": "Ni Luh Ayu Sari",
+        "star": 5,
+        "feedback": "Learning at Sanggar Seni Mupu Art Dance is so fun! I’ve learned a lot about Balinese dance and our culture."
+      },
+      {
+        "name": "I Made Arya",
+        "star": 5,
+        "feedback": "The instructor is patient and professional. My child has become more confident performing on stage."
+      },
+      {
+        "name": "Kadek Wulandari",
+        "star": 4,
+        "feedback": "An ideal place for kids to learn Balinese dance. The learning environment is fun and educational."
+      },
+      {
+        "name": "Desak Putri Paramita",
+        "star": 5,
+        "feedback": "Very happy to be part of this sanggar. I feel more connected to Balinese culture."
+      },
+      {
+        "name": "Gusti Agung Bima",
+        "star": 4,
+        "feedback": "The training curriculum is great. I hope they add contemporary dance classes in the future."
+      },
+      {
+        "name": "Ni Komang Sari Dewi",
+        "star": 5,
+        "feedback": "My child loves attending practices here. Not only learning dance, but also discipline and teamwork."
+      }
+    ]
+  },
+  "activities": {
+    "title": "Our Activities & Events",
+    "items": [
+      {
+        "title": "MUPUFEST #1: BALI-WIDE DANCE COMPETITION",
+        "desc": "MUPUFEST #1 was a successful dance competition across Bali hosted by Sanggar Seni Mupu Art Dance. It became a platform for youth to showcase their talent and love for Balinese dance in a competitive yet respectful and communal environment. More than just a competition, it was a gathering space for art lovers, culture preservers, and creative communities. Due to high enthusiasm, MUPUFEST is now an annual sanggar agenda with fresh concepts and energy each year."
+      },
+      {
+        "title": "ANNUAL LEVEL-UP EVENT",
+        "desc": "The Level-Up Event is an annual milestone for each student of Sanggar Seni Mupu Art Dance. In this event, students showcase what they've learned over the past year in front of instructors, parents, and guests. Through evaluations, students meeting the criteria are promoted to the next level. This event is both a performance and a celebration of each student's dedication, discipline, and growth in learning Balinese dance."
+      },
+      {
+        "title": "INTERSCHOOL COMPETITIONS & REGULAR TEMPLE PERFORMANCES",
+        "desc": "Inter-school competitions and regular temple offerings (ngayah) are consistent activities held by the sanggar. Competitions train students' confidence and apply skills learned. Temple performances serve as devotion and cultural preservation. In every performance, students proudly express their training with responsibility and respect for Balinese spiritual and cultural traditions."
+      }
+    ]
+  },
+  "documentation": {
+    "title": "Activity Documentation"
+  },
+  "contactus": {
+    "title": "Contact Us",
+    "desc": "If you have questions or would like to join us, please reach out through the form below."
+  },
+  "footer": {
+    "title1": "Get connected with us on social networks:",
+    "desc": "SANGGAR SENI MUPU ART DANCE\nFostering love for culture from an early age through Balinese dance.\nWe are here to guide, train, and support young generations in expressing themselves through movement and meaning."
+  }
+}

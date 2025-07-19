@@ -11,7 +11,7 @@
     >
       <!-- Left -->
       <div>
-        <span>Get connected with us on social networks:</span>
+        <span>{{ $t("footer.title1") }}</span>
       </div>
       <!-- Left -->
 
@@ -54,32 +54,35 @@
               style="width: 60px; background-color: #7c4dff; height: 2px"
             />
             <p>
-              SANGGAR SENI MUPU ART DANCE<br />
-              Menumbuhkan cinta budaya sejak dini melalui seni tari Bali.<br />
-              Kami hadir untuk membina, melatih, dan mewadahi generasi muda
-              dalam mengekspresikan diri lewat gerak dan makna.
+              {{ $t("footer.desc") }}
             </p>
           </div>
 
           <!-- Grid column -->
           <div class="col-md-6 col-lg-4 col-xl-4 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Our Links</h6>
+            <h6 class="text-uppercase fw-bold">Link</h6>
             <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px; background-color: #7c4dff; height: 2px"
             />
             <p>
-              <a href="/#home" class="text-white">Home</a>
+              <a href="/#home" class="text-white">{{ $t("navbar.home") }}</a>
             </p>
             <p>
-              <a href="/#aboutus" class="text-white">About Us</a>
+              <a href="/#aboutus" class="text-white">{{
+                $t("navbar.about")
+              }}</a>
             </p>
             <p>
-              <a href="/#orogram" class="text-white">Program</a>
+              <a href="/#program" class="text-white">{{
+                $t("navbar.program")
+              }}</a>
             </p>
             <p>
-              <a href="/#contactus" class="text-white">Contact Us</a>
+              <a href="/#contactus" class="text-white">{{
+                $t("navbar.contact_us")
+              }}</a>
             </p>
           </div>
           <!-- Grid column -->

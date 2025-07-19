@@ -10,11 +10,33 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
     }
   },
-  modules: ['@nuxtjs/google-fonts', '@nuxt/icon', 'nuxt-swiper'],
+  modules: ['@nuxtjs/google-fonts', '@nuxt/icon', 'nuxt-swiper', '@nuxtjs/i18n'],
   googleFonts: {
     families: {
       Poppins: [300, 400, 500, 600, 700] // Pilih bobot sesuai kebutuhan
     },
     display: 'swap'
-  }
+  },
+  i18n: {
+    /* module options */
+    lazy: true,
+    langDir: "locales",
+    strategy: "prefix_except_default",
+    locales: [
+      {
+        code: "en-US",
+        iso: "en-US",
+        name: "English(US)",
+        file: "en-US.json",
+      },
+      {
+        code: "in-ID",
+        iso: "in-ID",
+        name: "Indonesia",
+        file: "in-ID.json",
+      },
+    ],
+    defaultLocale: "en-US",
+    vueI18n: './i18n.config.ts'
+  },
 })

@@ -22,16 +22,23 @@ import Logo from "../../assets/images/logo.jpg";
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="/#home">Home</a>
+            <a class="nav-link" aria-current="page" href="/#home">{{
+              $t("navbar.home")
+            }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#aboutus">About Us</a>
+            <a class="nav-link" href="/#aboutus">{{ $t("navbar.about") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#program">Program</a>
+            <a class="nav-link" href="/#program">{{ $t("navbar.program") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#contactus">Contact Us</a>
+            <a class="nav-link" href="/#contactus">{{
+              $t("navbar.contact_us")
+            }}</a>
+          </li>
+          <li>
+            <UiLangSwitcher />
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -39,7 +46,8 @@ import Logo from "../../assets/images/logo.jpg";
             href="https://wa.me/6285791585816"
             class="btn btn-warning banner__button"
             target="_blank"
-            >Contact Us
+          >
+            {{ $t("navbar.contact_us") }}
             <Icon name="tabler:brand-whatsapp" />
           </a>
         </form>

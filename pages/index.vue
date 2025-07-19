@@ -193,12 +193,11 @@ onMounted(() => {
         Sanggar Seni Mupu Art Dance
       </h1>
       <p class="banner__text2" data-aos="fade-up">
-        Selamat datang di Website Sanggar Seni Mupu Art Dance, Membina Generasi
-        Muda Melalui Seni Tari Bali dan Warisan Budaya Luhur.
+        {{ $t("home.description") }}
       </p>
-      <a href="#" class="btn btn-warning banner__button" data-aos="zoom-in"
-        >Let's Learn Right Now!</a
-      >
+      <a href="#" class="btn btn-warning banner__button" data-aos="zoom-in">
+        {{ $t("home.button") }}
+      </a>
     </div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -215,11 +214,10 @@ onMounted(() => {
   <!-- membership -->
   <section class="membership">
     <div class="container">
-      <h2 class="membership__text1">membership <span>Benefits</span></h2>
-      <p>
-        Mari tumbuh dan berkembang bersama Sanggar Seni Mupu Art Dance, tempat
-        di mana seni dan budaya diwariskan dengan sepenuh hati.
-      </p>
+      <h2 class="membership__text1">
+        {{ $t("benefit.title") }}
+      </h2>
+      <p>{{ $t("benefit.description") }}</p>
       <div class="row row-cols-lg-3 row-cols-1 membership__cards">
         <ui-card1
           data-aos="zoom-in"
@@ -235,7 +233,7 @@ onMounted(() => {
   <!-- offers -->
   <section id="program" class="offers">
     <div class="container">
-      <h2 class="offers__text1"><span>Classes</span> We Offer</h2>
+      <h2 class="offers__text1">{{ $t("offer.title") }}</h2>
       <div class="row row-cols-lg-3 row-cols-1 offers__cards">
         <ui-card2
           data-aos="zoom-in"
@@ -250,7 +248,7 @@ onMounted(() => {
   </section>
   <!-- about us -->
   <section id="aboutus" class="aboutus">
-    <h2 class="aboutus__text1">About Us</h2>
+    <h2 class="aboutus__text1">{{ $t("aboutus.title") }}</h2>
     <div class="container">
       <div class="row row-cols-lg-2 row-cols-1 aboutus__container">
         <div class="col aboutus__left">
@@ -263,24 +261,7 @@ onMounted(() => {
           ></iframe>
         </div>
         <div class="col aboutus__right">
-          <h2>Welcome To Mupu Art Dance</h2>
-          <p>
-            <b> Sanggar Seni Mupu Art Dance</b> merupakan sebuah wadah pembinaan
-            seni tari tradisional Bali yang bertujuan untuk melestarikan budaya
-            melalui pelatihan, pertunjukan, dan pendidikan karakter. Kami
-            menyediakan pelatihan tari bagi semua kalangan, mulai dari anak-anak
-            hingga dewasa, dengan pendekatan yang profesional dan berlandaskan
-            pada kekayaan tradisi. Beberapa jenis tari yang diajarkan antara
-            lain Tari Pendet, Condong, Baris, Puspanjali, Wirayuda, serta
-            beberapa Tari Kreasi dan Tari Kontemporer
-          </p>
-          <p>
-            Melalui kegiatan rutin seperti ujian kenaikan tingkat, pementasan di
-            pura-pura, dan program pelatihan intensif, Sanggar Seni Mupu Art
-            Dance hadir sebagai ruang bagi generasi muda untuk belajar, tumbuh,
-            dan berkontribusi dalam menjaga warisan budaya Bali agar tetap hidup
-            dan berkembang.
-          </p>
+          {{ $t("aboutus.description") }}
         </div>
       </div>
     </div>
@@ -288,7 +269,7 @@ onMounted(() => {
   <!-- teachers -->
   <section class="teachers">
     <div class="container">
-      <h2 class="teachers__text1">Meet Our<span>Teachers</span></h2>
+      <h2 class="teachers__text1">{{ $t("tutor.title") }}</h2>
       <div
         class="row row-cols-lg-2 row-cols-1 teachers__cards justify-content-center"
       >
@@ -302,8 +283,7 @@ onMounted(() => {
           :desc="inst.desc"
         />
       </div>
-      <a href="#" class="btn btn-warning banner__button"
-        >See More!
+      <a href="#" class="btn btn-warning banner__button">
         <Icon name="tabler:brand-whatsapp" />
       </a>
     </div>
@@ -311,7 +291,7 @@ onMounted(() => {
   <!-- pricing -->
   <section id="program" class="pricing">
     <div class="container">
-      <h2 class="pricing__text1">Pricing Plan</h2>
+      <h2 class="pricing__text1">{{ $t("pricings.title") }}</h2>
       <div class="row row-cols-lg-2 row-cols-1 pricing__cards">
         <ui-card4
           data-aos="zoom-in"
@@ -351,9 +331,9 @@ onMounted(() => {
   <!-- testimonials -->
   <section class="testimonials">
     <div class="container">
-      <h2 class="testimonials__text1">Apa Kata Mereka?</h2>
+      <h2 class="testimonials__text1">{{ $t("testimoni.title") }}</h2>
       <p class="testimonials__text2">
-        Pendapat kesan dan pesan murid dan orang tua siswa kami
+        {{ $t("testimoni.desc") }}
       </p>
       <!-- slider -->
       <div class="testimonials__container">
@@ -380,7 +360,7 @@ onMounted(() => {
   <section class="post">
     <div class="post__container">
       <div class="container">
-        <h2 class="post__text1">Kegiatan dan Aktivitas Kami</h2>
+        <h2 class="post__text1">{{ $t("activities.title") }}</h2>
         <div class="row row-cols-lg-3 row-cols-1 post__cards">
           <ui-card6
             v-for="(inst, index) in posts"
@@ -397,7 +377,7 @@ onMounted(() => {
   <!-- documentation -->
   <section class="photo">
     <div class="container">
-      <h2 class="photo__text1">Dokumentasi Kegiatan</h2>
+      <h2 class="photo__text1">{{ $t("documentation.title") }}</h2>
       <div class="row row-cols-lg-3 row-cols-1 post__cards">
         <ui-card7
           v-for="(inst, index) in imagedokum"
@@ -424,10 +404,9 @@ onMounted(() => {
   <section id="contactus" class="contactus">
     <div class="container">
       <div class="contactus__container">
-        <h2>Any Question?<span> Let's Contact Us</span></h2>
+        <h2>{{ $t("contactus.title") }}</h2>
         <p>
-          Join us and embark on a captivating journey through the arts, culture,
-          and spirit of Bali!
+          {{ $t("contactus.desc") }}
         </p>
         <ul>
           <li>
