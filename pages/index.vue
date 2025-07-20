@@ -38,44 +38,6 @@ definePageMeta({
 const containerRef = ref(null);
 const swiper = useSwiper(containerRef);
 
-const instructors = [
-  {
-    name: "Ni Putu Yayang Lorensia Novita, S.Pd.",
-    role: "Guru Tari",
-    desc: " Pemilik sekaligus pelatih lulusan ISI Bali yang memiliki kompetensi dalam mengajar di bidang seni budaya Bali.",
-    image: imgMbYayang,
-  },
-];
-
-//
-const testimonials = [
-  {
-    text: "Pengalaman belajar tari di Mupu Art Dance benar-benar luar biasa! Instruktur sangat sabar dan profesional.",
-    name: "Sinta - Mahasiswi",
-    stars: 5,
-  },
-  {
-    text: "Tempatnya nyaman dan pengajarnya ramah. Cocok banget buat liburan sambil belajar budaya.",
-    name: "Rama - Wisatawan Lokal",
-    stars: 4,
-  },
-  {
-    text: "Saya awalnya malu-malu, tapi suasananya bikin nyaman dan percaya diri. Seru banget!",
-    name: "Lia - Pelajar SMA",
-    stars: 5,
-  },
-  {
-    text: "Kegiatan ini membuat saya lebih mengenal budaya Bali. Anak-anak juga sangat menikmatinya.",
-    name: "Bu Ayu - Ibu Rumah Tangga",
-    stars: 4,
-  },
-  {
-    text: "Instruktur sangat profesional dan kelasnya interaktif. Sangat direkomendasikan!",
-    name: "Budi - Orang Tua",
-    stars: 5,
-  },
-];
-
 //
 const imagedokum = [
   { image: imgDokum1 },
@@ -96,79 +58,6 @@ const imagedokum = [
   { image: imgDokum16 },
   { image: imgDokum17 },
   { image: imgDokum18 },
-];
-
-const posts = [
-  {
-    image: img14,
-    title: "MUPUFEST #1: LOMBA TARI SEBALI",
-    desc: "MUPUFEST #1 adalah event lomba tari se-Bali yang sukses digelar oleh Sanggar Seni Mupu Art Dance pada tahun lalu. Acara ini menjadi wadah bagi generasi muda untuk menunjukkan bakat dan kecintaannya terhadap seni tari Bali dalam suasana kompetitif namun tetap menjunjung tinggi sportivitas dan kebersamaan. MUPUFEST bukan sekadar lomba, tapi juga ruang berkumpulnya para pecinta seni, pelestari budaya, dan komunitas kreatif. Melihat antusiasme yang tinggi, MUPUFEST kini ditetapkan sebagai agenda tahunan sanggar yang akan terus hadir setiap tahun dengan konsep dan energi yang lebih segar.",
-  },
-  {
-    image: img15,
-    title: "KENAIKAN TINGKAT TAHUNAN",
-    desc: "Kenaikan Tingkat adalah agenda tahunan Sanggar Seni Mupu Art Dance yang menjadi momen penting bagi setiap siswa. Dalam acara ini, para siswa akan menampilkan hasil latihan mereka selama satu tahun penuh di hadapan pelatih, orang tua, dan tamu undangan. Melalui proses penilaian dan evaluasi, siswa yang telah memenuhi kriteria akan dinyatakan naik ke tingkat selanjutnya. Acara ini tidak hanya menjadi ajang unjuk kemampuan, tetapi juga bentuk apresiasi atas dedikasi, disiplin, dan perkembangan setiap individu dalam menekuni seni tari Bali.",
-  },
-  {
-    image: img16,
-    title: "LOMBA ANTAR SEKOLAH & NGAYAH RUTIN DI PURA",
-    desc: "Lomba antar sekolah dan ngayah rutin di pura merupakan kegiatan yang rutin dilaksanakan oleh Sanggar Seni Mupu Art Dance. Melalui ajang perlombaan tingkat sekolah, siswa diajak untuk mengasah kepercayaan diri dan mengaplikasikan kemampuan menari yang telah dipelajari di sanggar ke dalam situasi kompetitif. Selain itu, siswa juga secara rutin berpartisipasi dalam kegiatan ngayah di pura-pura sebagai bentuk pengabdian dan pelestarian budaya. Dalam setiap penampilan, para siswa menunjukkan hasil latihan mereka dengan penuh rasa tanggung jawab dan penghormatan terhadap nilai-nilai spiritual dan tradisi Bali.",
-  },
-];
-
-const memberships = [
-  {
-    image: imgSample2,
-    heading: "Pembina Berpengalaman",
-    description:
-      "Latihan langsung bersama pengajar profesional lulusan ISI Bali yang ahli di bidang seni tari Bali.",
-  },
-  {
-    image: imgSample2,
-    heading: "Panggung Ekspresi Budaya",
-    description:
-      "Kesempatan tampil dalam pementasan budaya, baik di tingkat daerah, kabupaten, provinsi hingga nasional",
-  },
-  {
-    image: imgSample2,
-    heading: "Pembinaan dan Pelestarian",
-    description:
-      "Menjadi bagian dari generasi muda yang aktif melestarikan budaya dan mengembangkan potensi diri melalui seni.",
-  },
-];
-
-//
-const dances = [
-  {
-    title: "Tari Pendet",
-    description:
-      "Tari Pendet adalah tari penyambutan khas Bali yang biasanya dibawakan oleh penari wanita dengan membawa bokor berisi bunga. Tarian ini melambangkan ungkapan selamat datang dan rasa hormat kepada para tamu atau dewa yang turun ke bumi.",
-    image: imgPendet,
-  },
-  {
-    title: "Tari Condong",
-    description:
-      "Tari Condong merupakan tarian pengantar dalam pertunjukan tari Legong. Gerakannya anggun dan penuh ekspresi, menggambarkan seorang dayang yang mendampingi putri raja. Tarian ini sering menjadi dasar teknik untuk penari pemula di Bali.",
-    image: imgCondong,
-  },
-  {
-    title: "Tari Baris",
-    description:
-      "Tari Baris adalah tarian perang tradisional Bali yang dibawakan oleh penari pria. Gerakannya tegas, gagah, dan penuh semangat, menggambarkan keberanian serta kesiapsiagaan seorang prajurit di medan perang.",
-    image: imgBaris,
-  },
-  {
-    title: "Tari Puspanjali",
-    description:
-      "Tari Puspanjali adalah tarian penyambutan modern yang diciptakan sebagai bentuk penghormatan kepada tamu. Dibawakan oleh sekelompok penari wanita, tarian ini menggabungkan gerak klasik dengan nuansa ramah dan penuh keindahan.",
-    image: imgPuspanjali,
-  },
-  {
-    title: "Tari Wirayuda",
-    description:
-      "Tari Wirayuda menggambarkan barisan prajurit kerajaan yang bersiap membela tanah air. Tarian ini dibawakan oleh kelompok penari pria dengan gerakan dinamis, menunjukkan kekompakan, kekuatan, dan jiwa kepahlawanan.",
-    image: imgWirayudi,
-  },
 ];
 
 onMounted(() => {
@@ -221,11 +110,21 @@ onMounted(() => {
       <div class="row row-cols-lg-3 row-cols-1 membership__cards">
         <ui-card1
           data-aos="zoom-in"
-          v-for="(item, index) in memberships"
-          :key="index"
-          :imageSrc="item.image"
-          :heading="item.heading"
-          :description="item.description"
+          :imageSrc="imgSample2"
+          :heading="$t('benefit.items[0].title')"
+          :description="$t('benefit.items[0].description')"
+        />
+        <ui-card1
+          data-aos="zoom-in"
+          :imageSrc="imgSample2"
+          :heading="$t('benefit.items[1].title')"
+          :description="$t('benefit.items[1].description')"
+        />
+        <ui-card1
+          data-aos="zoom-in"
+          :imageSrc="imgSample2"
+          :heading="$t('benefit.items[2].title')"
+          :description="$t('benefit.items[2].description')"
         />
       </div>
     </div>
@@ -237,11 +136,33 @@ onMounted(() => {
       <div class="row row-cols-lg-3 row-cols-1 offers__cards">
         <ui-card2
           data-aos="zoom-in"
-          v-for="(dance, index) in dances"
-          :key="index"
-          :title="dance.title"
-          :description="dance.description"
-          :image="dance.image"
+          :title="$t('offer.items[0].title')"
+          :description="$t('offer.items[0].description')"
+          :image="imgPendet"
+        />
+        <ui-card2
+          data-aos="zoom-in"
+          :title="$t('offer.items[1].title')"
+          :description="$t('offer.items[1].description')"
+          :image="imgCondong"
+        />
+        <ui-card2
+          data-aos="zoom-in"
+          :title="$t('offer.items[2].title')"
+          :description="$t('offer.items[2].description')"
+          :image="imgBaris"
+        />
+        <ui-card2
+          data-aos="zoom-in"
+          :title="$t('offer.items[3].title')"
+          :description="$t('offer.items[3].description')"
+          :image="imgPuspanjali"
+        />
+        <ui-card2
+          data-aos="zoom-in"
+          :title="$t('offer.items[4].title')"
+          :description="$t('offer.items[4].description')"
+          :image="imgWirayudi"
         />
       </div>
     </div>
@@ -275,12 +196,10 @@ onMounted(() => {
       >
         <ui-card3
           data-aos="zoom-in"
-          v-for="(inst, index) in instructors"
-          :key="index"
-          :name="inst.name"
-          :role="inst.role"
-          :image="inst.image"
-          :desc="inst.desc"
+          :name="$t('tutor.items[0].title')"
+          :role="$t('tutor.items[0].job')"
+          :image="imgMbYayang"
+          :desc="$t('tutor.items[0].description')"
         />
       </div>
       <a href="#" class="btn btn-warning banner__button">
@@ -295,35 +214,25 @@ onMounted(() => {
       <div class="row row-cols-lg-2 row-cols-1 pricing__cards">
         <ui-card4
           data-aos="zoom-in"
-          title="Les Private"
-          price="Rp 75.000 / pertemuan"
-          schedule="Sesuai jadwal pelatih"
-          mentor="Ni Putu Yayang Lorensia Novita, S.Pd."
-          phone="6282144988984"
-          desc="Paket ini mencakup latihan dasar seni tari Bali untuk anak-anak dan pemula yang ingin belajar secara konsisten dan menyenangkan."
-          :dances="[
-            'Tari Pendet',
-            'Tari Condong',
-            'Tari Baris',
-            'Tari Puspanjali',
-            'Tari Wirayuda',
-          ]"
+          :title="$t('pricings.items[0].label')"
+          :price="$t('pricings.items[0].price')"
+          :schedule="$t('pricings.items[0].date')"
+          :mentor="$t('pricings.items[0].teacher')"
+          :phone="$t('pricings.items[0].call')"
+          :desc="$t('pricings.items[0].desc')"
+          :dances="$t('pricings.items[0].desc2')"
+          :desc3="$t('pricings.items[0].desc3')"
         />
         <ui-card4
           data-aos="zoom-in"
-          title="Les Umum"
-          price="Rp 20.000 / bulan"
-          schedule="Setiap hari Minggu"
-          mentor="Ni Putu Yayang Lorensia Novita, S.Pd."
-          phone="6282144988984"
-          desc="Latihan private ini ditujukan bagi peserta yang ingin mendapatkan bimbingan lebih intensif secara satu per satu dengan pelatih. Cocok untuk pemula yang ingin cepat menguasai dasar tari, atau penari yang ingin memperdalam teknik dan ekspresi."
-          :dances="[
-            'Tari Pendet',
-            'Tari Condong',
-            'Tari Baris',
-            'Tari Puspanjali',
-            'Tari Wirayuda',
-          ]"
+          :title="$t('pricings.items[1].label')"
+          :price="$t('pricings.items[1].price')"
+          :schedule="$t('pricings.items[1].date')"
+          :mentor="$t('pricings.items[1].teacher')"
+          :phone="$t('pricings.items[1].call')"
+          :desc="$t('pricings.items[1].desc')"
+          :dances="$t('pricings.items[1].desc2')"
+          :desc3="$t('pricings.items[1].desc3')"
         />
       </div>
     </div>
@@ -343,12 +252,52 @@ onMounted(() => {
             :navigation="true"
             :pagination="true"
           >
-            <swiper-slide v-for="(item, index) in testimonials" :key="index">
+            <swiper-slide>
               <ui-card5
                 :image="imgSample2"
-                :text="item.text"
-                :name="item.name"
-                :stars="item.stars"
+                :text="$t('testimoni.items[0].feedback')"
+                :name="$t('testimoni.items[0].name')"
+                :stars="5"
+              />
+            </swiper-slide>
+            <swiper-slide>
+              <ui-card5
+                :image="imgSample2"
+                :text="$t('testimoni.items[1].feedback')"
+                :name="$t('testimoni.items[1].name')"
+                :stars="4"
+              />
+            </swiper-slide>
+            <swiper-slide>
+              <ui-card5
+                :image="imgSample2"
+                :text="$t('testimoni.items[2].feedback')"
+                :name="$t('testimoni.items[2].name')"
+                :stars="5"
+              />
+            </swiper-slide>
+            <swiper-slide>
+              <ui-card5
+                :image="imgSample2"
+                :text="$t('testimoni.items[3].feedback')"
+                :name="$t('testimoni.items[3].name')"
+                :stars="5"
+              />
+            </swiper-slide>
+            <swiper-slide>
+              <ui-card5
+                :image="imgSample2"
+                :text="$t('testimoni.items[4].feedback')"
+                :name="$t('testimoni.items[4].name')"
+                :stars="4"
+              />
+            </swiper-slide>
+            <swiper-slide>
+              <ui-card5
+                :image="imgSample2"
+                :text="$t('testimoni.items[5].feedback')"
+                :name="$t('testimoni.items[5].name')"
+                :stars="5"
               />
             </swiper-slide>
           </swiper-container>
@@ -363,11 +312,21 @@ onMounted(() => {
         <h2 class="post__text1">{{ $t("activities.title") }}</h2>
         <div class="row row-cols-lg-3 row-cols-1 post__cards">
           <ui-card6
-            v-for="(inst, index) in posts"
-            :key="index"
-            :image="inst.image"
-            :title="inst.title"
-            :desc="inst.desc"
+            :image="img14"
+            :title="$t('activities.items[0].title')"
+            :desc="$t('activities.items[0].desc')"
+            data-aos="fade-up"
+          />
+          <ui-card6
+            :image="img15"
+            :title="$t('activities.items[1].title')"
+            :desc="$t('activities.items[1].desc')"
+            data-aos="fade-up"
+          />
+          <ui-card6
+            :image="img16"
+            :title="$t('activities.items[2].title')"
+            :desc="$t('activities.items[2].desc')"
             data-aos="fade-up"
           />
         </div>

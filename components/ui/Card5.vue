@@ -14,7 +14,7 @@ defineProps<{
       <p class="component__text1">{{ text }}</p>
       <div class="component__stars">
         <Icon
-          v-for="n in stars || 5"
+          v-for="n in stars"
           :key="n"
           name="mynaui:star-solid"
           style="color: #fee160; font-size: 30px"

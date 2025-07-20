@@ -20,17 +20,14 @@
       <p>{{ desc }}</p>
       <div class="component__text3">
         <strong>Jenis Tarian:</strong>
-        <ul>
-          <li v-for="(dance, index) in dances" :key="index">- {{ dance }}</li>
-        </ul>
+        <div>{{ dances }}</div>
       </div>
-
       <a
         target="_blank"
         :href="`https://wa.me/${phone}`"
         class="btn btn-warning component__button"
       >
-        Hubungi Kami <Icon name="tabler:brand-whatsapp" />
+        {{ desc3 }}<Icon name="tabler:brand-whatsapp" />
       </a>
     </div>
   </div>
@@ -44,7 +41,8 @@ defineProps<{
   mentor: string;
   phone: string;
   desc: string;
-  dances: string[];
+  dances: string;
+  desc3: string;
 }>();
 </script>
 
