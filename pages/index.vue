@@ -84,7 +84,7 @@ onMounted(() => {
       <p class="banner__text2" data-aos="fade-up">
         {{ $t("home.description") }}
       </p>
-      <a href="#" class="btn btn-warning banner__button" data-aos="zoom-in">
+      <a href="/#nextPart" class="btn btn-warning banner__button">
         {{ $t("home.button") }}
       </a>
     </div>
@@ -101,7 +101,7 @@ onMounted(() => {
     </svg>
   </section>
   <!-- membership -->
-  <section class="membership">
+  <section class="membership" id="nextPart">
     <div class="container">
       <h2 class="membership__text1">
         {{ $t("benefit.title") }}
@@ -453,7 +453,7 @@ onMounted(() => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 9;
+    z-index: 999;
   }
 
   &__text1 {
